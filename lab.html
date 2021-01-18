@@ -14,7 +14,9 @@
 			$("#welcome").html("jquery");
 			$(".my-class:first").html('first');
 			$(".my-class:last").html('second');
-			$("div p").html("this is a paragraph");
+			for (let i = 0; i < 5; i++) {
+                            $("div p").eq(i).html(`${i+1}- this is a paragraph`);
+                        }
 			$("ul li:first-child").css("background-color","red");
 			$("a[href$=org]").html('<a href="http://www.yahoo.com">Yahoo</a>');
 		});
