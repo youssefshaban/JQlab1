@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+	<script>
+		$(function(){
+			$("#welcome").html("javascript");
+			$("#welcome").html("jquery");
+			$(".my-class:first").html('first');
+			$(".my-class:last").html('second');
+			$("div p").html("this is a paragraph");
+			$("ul li:first-child").css("background-color","red");
+			$("a[href$=org]").html('<a href="http://www.yahoo.com">Yahoo</a>');
+		});
+
+	</script>
+</head>
+<body>
+<h1></h1>
+<p id="welcome"></p>
+<p class="my-class"></p>
+<p class="my-class"></p>
+<div>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+</div>
+<h2>Names:</h2>
+<ul>
+	<li>ahmed</li>
+	<li>muhammed</li>
+	<li>mahmoud</li>
+
+</ul>
+<h2>Department:</h2>
+<ul>
+	<li>IT</li>
+	<li>Sales</li>
+	<li>HR</li>
+
+</ul>
+<h2>References </h2>
+<a href="http://www.google.com">google</a>
+<a href="http://www.wikipedia.org">wikipedia</a>
+</body>
+</html>
